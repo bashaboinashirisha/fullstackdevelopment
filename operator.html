@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <form onsubmit="cal()">
+        <input type="text" id="v1">
+        <input type="text" id="v2">
+        <input type="text" id="v3">
+        <input type="submit">
+    </form>
+    <script>
+        function cal()
+        {
+            var v1=parseInt(document.getElementById("v1").value);
+            var v2=parseInt(document.getElementById("v2").value);
+            var v3=parseInt(document.getElementById("v3").value);
+            if(v3==1)
+        {
+            document.write(v1+v2);
+        }
+        else if(v3==2)
+        {
+            document.write(v1-v2);
+
+        }
+        else if(v3==3)
+        {
+            document.write(v1*v2);
+        }
+        else if(v3==4)
+        {
+            document.write(v1/v2);
+        }
+        else
+        {
+         documnet.write(v1%v2);
+        }
+    }
+
+    </script>
+
+    </form>
+</body>
+</html>

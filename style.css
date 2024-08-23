@@ -1,0 +1,53 @@
+.container,body{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    width: 10%;
+    height: 10%;
+    background-color: rgb(14, 22, 22);
+    font-size: 56px;
+    color:white ;
+    text-align: center;
+    animation-name: san;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    position: relative;
+}
+@keyframes san {
+           0%{
+              /* width: 15%; */
+              /* height: 15%; */
+            background-color:red;
+            top: 0px;
+            left: 0px;
+           }
+           25%{
+            /* width: 50%; */
+            
+          background-color:rgb(93, 32, 215);
+          top: 0px;
+          left: 500px;
+         }
+         50%{
+            /* width: 15%; */
+            
+          background-color:red;
+          top: 500px;
+          left: 500px;
+         }
+         75%{
+            /* width: 90%; */
+            
+          background-color:rgb(159, 223, 19);
+          top: 500px;
+          left: 0px;
+         }
+         100%{
+            /* width: 15%; */
+            background-color: burlywood;
+            top: 0px;
+            left: 0px;
+         }
+}

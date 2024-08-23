@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Discount Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.product, .payment-method, .final-price {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#payment-options {
+    padding: 5px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#final-price {
+    color: #d9534f;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="product">
+            
+        </div>
+        <div class="payment-method">
+           
+            <select id="payment-options" onchange="calculateDiscount()">
+                <option value="0">Select an option</option>
+                <option value="0.05">Credit Card (5% Discount)</option>
+                <option value="0.10">Debit Card (10% Discount)</option>
+                <option value="0.15">Net Banking (15% Discount)</option>
+            </select>
+        </div>
+        <div class="final-price">
+            <label for="final-price">Final price: </label>
+            
+        </div>
+        <div class="final-price">
+            <label for="final-price">Default Price: </label>
+            <span id="final-price">20000.00</span>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+p:hover
+{
+    background-color: brown;
+}
+div>p:nth-child(odd)
+{
+    background-color: blue;
+}
+div>p:nth-child(even)
+{
+    background-color:rgb(42,233,72);
+}
